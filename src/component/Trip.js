@@ -1,4 +1,5 @@
 import TripData from "./TripData";
+import "./TripStyles.css";
 import "./TripStyles.css"
 import Trip1Image from "../assets/6.jpg"
 import Trip2Image from "../assets/7.jpg"
@@ -12,11 +13,12 @@ function Trip(){
             <h1>Trips To Explore</h1>
             <p>You can discover unique destinations using Google Maps.</p>     
             <div  className="tripcard">
-    
+
                 <TripData 
                 tripId="1"
                 image={Trip1Image}
                 heading= "Trip in Ladakh"
+                text="2N Pangon | 1N leh | 3N Toso Moriri"
                 additionalDetails={[
                     "INCLUDED:  1 Flight , 1 Hotel , 1 Transfer ",
                     "Day 1 - Hall of Fame ,Spituk Monastery, Magnetic Hill , PLACES COVERED: 3",
@@ -26,13 +28,9 @@ function Trip(){
                     "Day 5 - Pangong Lake , PLACES COVERED: 1",
                     "Day 6 - Pangong to Leh (Ride)",
                     "Day 7 - Departure"
-
-                    
+              
                 ]}
                 label= " Rs 10,500 | 6N/7D"  
-
-            
-                
              />
                   
             
@@ -75,7 +73,9 @@ function Trip(){
                 />
                        
         </div>
+        
         </div>
+       
 
     );
 }

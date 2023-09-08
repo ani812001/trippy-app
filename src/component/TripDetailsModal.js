@@ -1,22 +1,13 @@
 import React, { useState } from 'react';
-// import BookingForm from './BookingPage';
-
-
-function TripDetailsModal({  heading, additionalDetails, text, closeModal }) {
-//     const [isBookingFormOpen,props, setIsBookingFormOpen] = useState(false);
-
-//   const openBookingForm = () => {
-//     setIsBookingFormOpen(true);
-//   };
-
+function TripDetailsModal({ tripId, heading, additionalDetails, text, closeModal }) {
     return (
         <div className="modal">
             <div className="modal-content">
                 
-                <h2>{heading}</h2>
+                <h2>{tripId} {heading}</h2>
                 <p>{text}</p>
+                this is me
                 <h3>Additional Details: </h3>
-                {/* <p>{additionalDetails}</p> */}
                 <ul>
                     {additionalDetails.map((additionalDetails , index)=>(
                         <li key={index}>{additionalDetails}</li>    
@@ -24,8 +15,6 @@ function TripDetailsModal({  heading, additionalDetails, text, closeModal }) {
                 </ul>
                 <button onClick={closeModal}>Close</button>
             </div>
-            {/* {/* {isBookingFormOpen && (
-    //     <BookingForm tripDetails={props} onClose={closeModal} /> */}
     
         </div>
     );
