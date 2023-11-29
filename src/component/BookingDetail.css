@@ -47,7 +47,7 @@
 .booking-details input[type="email"]:focus,
 .booking-details input[type="tel"]:focus,
 .booking-details input[type="number"]:focus {
-  border-color: #3498db;
+  border-color: #f3f3f3;
 }
 
 .booking-details button[type="submit"],
@@ -65,7 +65,7 @@
 .booking-details button[type="submit"],
 .booking-details button,
 .close-button {
-  background-color: #3498db;
+  background-color: #0485ee;
   color: #fff;
 }
 
